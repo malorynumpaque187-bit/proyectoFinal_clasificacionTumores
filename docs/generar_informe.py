@@ -64,6 +64,9 @@ h += [Spacer(1, 3.5 * cm),
       Spacer(1, 2.2 * cm)]
 for l in ["<b>Autor: Malory Numpaque</b>", "Teoría de la Computación II", "Actividad 6. Mini-proyecto", "Universidad de La Salle", "Noviembre de 2026"]:
     h.append(Paragraph(l, ParagraphStyle("p", parent=C, fontSize=11.5, alignment=TA_CENTER)))
+URL_REPO = "https://github.com/malorynumpaque187-bit/proyectoFinal_clasificacionTumores.git"
+h += [Spacer(1, 1.2 * cm), Paragraph("<b>Repositorio:</b>", ParagraphStyle("p", parent=C, fontSize=10.5, alignment=TA_CENTER)),
+      Paragraph(f'<link href="{URL_REPO}" color="#1f4e9c"><u>{URL_REPO}</u></link>', ParagraphStyle("p", parent=C, fontSize=9.5, alignment=TA_CENTER))]
 h.append(PageBreak())
 
 h += [Paragraph("1. Selección del modelo", H1),
