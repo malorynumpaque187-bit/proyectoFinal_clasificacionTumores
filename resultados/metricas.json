@@ -1,0 +1,109 @@
+{
+  "dataset": {
+    "filas": 569,
+    "variables": 30,
+    "malignos": 212,
+    "benignos": 357,
+    "train": 455,
+    "test": 114,
+    "malignos_test": 42
+  },
+  "modelo_elegido": "Regresión Logística",
+  "test_umbral_0_5": {
+    "Referencia (clase mayoritaria)": {
+      "accuracy": 0.631578947368421,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "auc": 0.5,
+      "VP": 0,
+      "FP": 0,
+      "VN": 72,
+      "FN": 42
+    },
+    "Regresión Logística": {
+      "accuracy": 0.9649122807017544,
+      "precision": 0.975,
+      "recall": 0.9285714285714286,
+      "f1": 0.9512195121951219,
+      "auc": 0.996031746031746,
+      "VP": 39,
+      "FP": 1,
+      "VN": 71,
+      "FN": 3
+    },
+    "Árbol de Decisión": {
+      "accuracy": 0.9122807017543859,
+      "precision": 0.9444444444444444,
+      "recall": 0.8095238095238095,
+      "f1": 0.8717948717948718,
+      "auc": 0.876984126984127,
+      "VP": 34,
+      "FP": 2,
+      "VN": 70,
+      "FN": 8
+    },
+    "KNN (k=5)": {
+      "accuracy": 0.956140350877193,
+      "precision": 0.9743589743589743,
+      "recall": 0.9047619047619048,
+      "f1": 0.9382716049382716,
+      "auc": 0.982308201058201,
+      "VP": 38,
+      "FP": 1,
+      "VN": 71,
+      "FN": 4
+    }
+  },
+  "train_modelo_elegido": {
+    "accuracy": 0.9868131868131869,
+    "precision": 1.0,
+    "recall": 0.9647058823529412,
+    "f1": 0.9820359281437125,
+    "auc": 0.9975851393188854,
+    "VP": 164,
+    "FP": 0,
+    "VN": 285,
+    "FN": 6
+  },
+  "criterios_umbral_0_5": {
+    "recall >= 0.95": false,
+    "F1 >= 0.93": true,
+    "F1 supera al modelo de referencia": true
+  },
+  "aceptado_umbral_0_5": false,
+  "umbral_calibrado": 0.3147011992766967,
+  "test_umbral_calibrado": {
+    "accuracy": 0.9736842105263158,
+    "precision": 0.975609756097561,
+    "recall": 0.9523809523809523,
+    "f1": 0.963855421686747,
+    "auc": 0.996031746031746,
+    "VP": 40,
+    "FP": 1,
+    "VN": 71,
+    "FN": 2,
+    "recall_ic95": [
+      0.8420986468452026,
+      0.9868427513607937
+    ]
+  },
+  "criterios_umbral_calibrado": {
+    "recall >= 0.95": true,
+    "F1 >= 0.93": true,
+    "F1 supera al modelo de referencia": true
+  },
+  "aceptado_umbral_calibrado": true,
+  "coeficientes_top10": {
+    "worst texture": 1.4340931710338392,
+    "radius error": 1.2333251663808187,
+    "worst symmetry": 1.0612636621709468,
+    "mean concave points": 0.9528128318119825,
+    "worst concavity": 0.9114058021854969,
+    "area error": 0.9090290582882165,
+    "compactness error": -0.9069248024192622,
+    "worst area": 0.9004766112545068,
+    "worst radius": 0.8969678339058802,
+    "mean concavity": 0.7822983533225192
+  }
+}
